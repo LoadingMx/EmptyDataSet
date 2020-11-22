@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		EE77D3C1256A07B700316575 /* EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = EE77D3BF256A07B700316575 /* EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE77D3CD256A07F100316575 /* EmptyDataSetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D3C8256A07F100316575 /* EmptyDataSetSource.swift */; };
+		EE77D3CE256A07F100316575 /* EmptyDataSetImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D3C9256A07F100316575 /* EmptyDataSetImpl.swift */; };
+		EE77D3CF256A07F100316575 /* EmptyDataSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D3CA256A07F100316575 /* EmptyDataSetView.swift */; };
+		EE77D3D0256A07F100316575 /* EmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D3CB256A07F100316575 /* EmptyDataSet.swift */; };
+		EE77D3D1256A07F100316575 /* EmptyDataSetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE77D3CC256A07F100316575 /* EmptyDataSetDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE77D3BC256A07B700316575 /* EmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE77D3BF256A07B700316575 /* EmptyDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyDataSet.h; sourceTree = "<group>"; };
 		EE77D3C0256A07B700316575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE77D3C8256A07F100316575 /* EmptyDataSetSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetSource.swift; sourceTree = "<group>"; };
+		EE77D3C9256A07F100316575 /* EmptyDataSetImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetImpl.swift; sourceTree = "<group>"; };
+		EE77D3CA256A07F100316575 /* EmptyDataSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetView.swift; sourceTree = "<group>"; };
+		EE77D3CB256A07F100316575 /* EmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSet.swift; sourceTree = "<group>"; };
+		EE77D3CC256A07F100316575 /* EmptyDataSetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				EE77D3BF256A07B700316575 /* EmptyDataSet.h */,
+				EE77D3CB256A07F100316575 /* EmptyDataSet.swift */,
+				EE77D3CC256A07F100316575 /* EmptyDataSetDelegate.swift */,
+				EE77D3C9256A07F100316575 /* EmptyDataSetImpl.swift */,
+				EE77D3C8256A07F100316575 /* EmptyDataSetSource.swift */,
+				EE77D3CA256A07F100316575 /* EmptyDataSetView.swift */,
 				EE77D3C0256A07B700316575 /* Info.plist */,
 			);
 			path = EmptyDataSet;
@@ -94,6 +109,7 @@
 				TargetAttributes = {
 					EE77D3BB256A07B700316575 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE77D3D1256A07F100316575 /* EmptyDataSetDelegate.swift in Sources */,
+				EE77D3CE256A07F100316575 /* EmptyDataSetImpl.swift in Sources */,
+				EE77D3CD256A07F100316575 /* EmptyDataSetSource.swift in Sources */,
+				EE77D3D0256A07F100316575 /* EmptyDataSet.swift in Sources */,
+				EE77D3CF256A07F100316575 /* EmptyDataSetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +282,7 @@
 		EE77D3C5256A07B700316575 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mx.EmptyDataSet;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +307,7 @@
 		EE77D3C6256A07B700316575 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
